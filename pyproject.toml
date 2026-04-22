@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pokebenchmark-agent"
+version = "0.1.0"
+description = "LLM agent framework for playing Pokemon — skills, planning, memory, multi-provider"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Shardul Aggarwal" }]
+dependencies = [
+    "pokebenchmark-emulator>=0.1.0",
+    "anthropic>=0.39.0",
+    "openai>=1.0.0",
+    "google-genai>=1.0.0",
+    "ollama>=0.4.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+pokebenchmark-agent = "pokebenchmark_agent.main:main"
+
+[tool.setuptools.packages.find]
+include = ["pokebenchmark_agent*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

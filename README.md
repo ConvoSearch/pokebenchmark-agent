@@ -1,6 +1,6 @@
 # pokebenchmark-agent
 
-LLM agent framework for playing Pokemon GBA games. Part of the [pokebenchmark](https://github.com/ShardulAgg/pokebenchmark-platform) benchmarking stack.
+LLM agent framework for playing Pokemon GBA games. Part of the [pokebenchmark](https://github.com/ConvoSearch/pokebenchmark-platform) benchmarking stack.
 
 ## What's here
 
